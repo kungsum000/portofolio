@@ -11,6 +11,7 @@ import tutorImage from '../assets/tutor-certificate.jpg';
 import tanakaImage from '../assets/tanaka-internship.jpg';
 import tanakaProjectImage from '../assets/tanaka-project.jpg';
 import portfolioProjectImage from '../assets/portfolio-project.png';
+import acestreetImage from '../assets/acestreet-landing.png';
 
 export const personalInfo = {
   name: "Umi Kungsum",
@@ -185,17 +186,17 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Desain Branding & Visual",
+    title: "AceStreet Landing Page",
     description:
-      "Koleksi karya desain grafis meliputi branding, poster event, media sosial, dan materi promosi untuk berbagai organisasi dan event.",
+      "Landing page brand streetwear AceStreet — mitra terpercaya produksi kaos harian, event, dan merchandise eksklusif. Didesain dengan estetika bold dan modern.",
     longDescription:
-      "Portofolio desain grafis yang mencakup pembuatan identitas visual brand, desain poster event skala besar, template media sosial, dan materi pemasaran digital.",
-    tech: ["Adobe Illustrator", "CorelDraw", "Canva", "Photoshop"],
-    image: null,
-    github: "#",
+      "Landing page modern untuk brand fashion streetwear AceStreet. Menampilkan hero section dengan tipografi bold, galeri produk, navigasi responsif, dan CTA yang kuat. Dirancang dengan identitas visual yang konsisten: palet hitam, putih, dan kuning neon khas AceStreet.",
+    tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    image: acestreetImage,
+    github: "https://github.com/kungsum000/acestreet-landingpage",
     demo: "#",
-    category: "Design",
-    featured: false,
+    category: "Web App",
+    featured: true,
   },
   {
     id: 4,
