@@ -119,8 +119,8 @@ export default function Hero() {
       ))}
 
       {/* Main content */}
-      <div className="container-custom relative z-10 py-32 text-center md:text-left">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="container-custom relative z-10 py-24 md:py-32 text-center md:text-left">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left: Text Content */}
           <div>
 
@@ -233,7 +233,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, type: 'spring', stiffness: 80 }}
-            className="hidden md:flex justify-center items-center"
+            className="flex justify-center items-center"
           >
             <div className="relative">
               {/* Code card floating */}
@@ -243,7 +243,7 @@ export default function Hero() {
               >
                 {/* Main avatar circle */}
                 <div
-                  className="w-80 h-80 rounded-full relative overflow-hidden"
+                  className="w-48 h-48 md:w-80 md:h-80 rounded-full relative overflow-hidden"
                   style={{
                     border: '2px solid rgba(236, 72, 153, 0.4)',
                     boxShadow: '0 0 0 6px rgba(236, 72, 153,0.07), 0 0 60px rgba(139, 92, 246, 0.3), 0 0 100px rgba(236, 72, 153, 0.1)',
