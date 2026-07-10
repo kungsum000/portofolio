@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiArrowDown, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolioData';
 import profilePhoto from '../assets/profil.jpg';
 
@@ -164,33 +164,7 @@ export default function Hero() {
               modern, responsif, dan berkesan. Siap berkontribusi penuh dalam tim development.
             </motion.p>
 
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-              className="flex flex-wrap gap-4 justify-center md:justify-start mb-10"
-            >
-              <motion.a
-                href={personalInfo.cvLink}
-                className="btn-primary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiDownload />
-                Download CV
-              </motion.a>
-              <motion.button
-                onClick={scrollToProjects}
-                className="btn-secondary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Lihat Proyek
-              </motion.button>
-            </motion.div>
+
 
             {/* Social Links */}
             <motion.div
@@ -302,19 +276,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.button
-          onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          aria-label="Scroll down"
-        >
-          <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--text-muted)' }}>
-            Scroll
-          </span>
-          <FiArrowDown style={{ color: 'var(--accent-pink)' }} />
-        </motion.button>
+
       </div>
     </section>
   );
