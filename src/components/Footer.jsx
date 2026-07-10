@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiHeart, FiCode, FiArrowUp } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiCode, FiArrowUp } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolioData';
 
@@ -128,39 +128,22 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div
-          className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8"
-          style={{ borderTop: '1px solid var(--border-color)' }}
-        >
-          <p className="text-xs flex items-center gap-1.5" style={{ color: 'var(--text-muted)' }}>
-            Dibuat dengan{' '}
-            <FiHeart size={12} style={{ color: '#ef4444' }} />{' '}
-            menggunakan{' '}
-            <span style={{ color: 'var(--accent-pink)' }}>React.js</span>,{' '}
-            <span style={{ color: '#06B6D4' }}>Tailwind CSS</span> &{' '}
-            <span style={{ color: 'var(--accent-purple-light)' }}>Framer Motion</span>
-          </p>
-
-          <div className="flex items-center gap-4">
-            <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-              © 2025 {personalInfo.name}. All rights reserved.
-            </p>
-            <motion.button
-              onClick={scrollToTop}
-              className="w-8 h-8 rounded-lg flex items-center justify-center"
-              style={{
-                background: 'rgba(236, 72, 153, 0.1)',
-                border: '1px solid rgba(236, 72, 153, 0.2)',
-                color: 'var(--accent-pink)',
-              }}
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Scroll to top"
-            >
-              <FiArrowUp size={14} />
-            </motion.button>
-          </div>
+        {/* Back to top */}
+        <div className="flex justify-end pt-8" style={{ borderTop: '1px solid var(--border-color)' }}>
+          <motion.button
+            onClick={scrollToTop}
+            className="w-8 h-8 rounded-lg flex items-center justify-center"
+            style={{
+              background: 'rgba(236, 72, 153, 0.1)',
+              border: '1px solid rgba(236, 72, 153, 0.2)',
+              color: 'var(--accent-pink)',
+            }}
+            whileHover={{ scale: 1.1, y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Scroll to top"
+          >
+            <FiArrowUp size={14} />
+          </motion.button>
         </div>
       </div>
     </footer>
