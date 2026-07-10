@@ -164,7 +164,7 @@ export const projects = [
       "Aplikasi web full-stack yang mencakup modul manajemen barang masuk/keluar, petty cash, pemasaran online, dan laporan keuangan. Menampilkan dashboard analitik real-time dengan visualisasi data interaktif.",
     tech: ["React.js", "Tailwind CSS", "Node.js", "MySQL", "REST API"],
     image: tanakaProjectImage,
-    github: "https://github.com/kungsum000/tanaka-management",
+    github: "https://github.com/kungsum000/TMS",
     demo: "#",
     category: "Web App",
     featured: true,
