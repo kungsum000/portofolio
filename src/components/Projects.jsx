@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiExternalLink, FiX } from 'react-icons/fi';
-import { projects } from '../data/portfolioData';
+import { projects, personalInfo } from '../data/portfolioData';
 
 const categoryColors = {
   'Web App': { color: '#61DAFB', bg: 'rgba(97, 218, 251, 0.1)' },
