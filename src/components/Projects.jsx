@@ -44,7 +44,9 @@ function ProjectModal({ project, onClose }) {
           style={{ background: project.image ? 'var(--bg-card)' : (thumbnailGradients[project.id - 1] || thumbnailGradients[0]) }}
         >
           {project.image ? (
-            <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top" />
+            <div className="w-full h-full p-6 flex items-center justify-center bg-gradient-to-br from-black/40 to-black/10 backdrop-blur-sm">
+              <img src={project.image} alt={project.title} className="max-w-full max-h-full object-contain rounded-lg shadow-2xl border border-white/10" />
+            </div>
           ) : (
             <div className="text-6xl" style={{ filter: 'drop-shadow(0 0 20px rgba(255,255,255,0.3))' }}>
               {project.category === 'Web App' ? '💻' : '🎨'}
@@ -160,7 +162,9 @@ function ProjectCard({ project, index, onClick }) {
       >
         {/* Thumbnail Image or Emoji */}
         {project.image ? (
-          <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+          <div className="w-full h-full p-4 flex items-center justify-center bg-gradient-to-br from-black/40 to-black/10">
+            <img src={project.image} alt={project.title} className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110 rounded drop-shadow-xl border border-white/5" />
+          </div>
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-5xl transition-transform duration-500 group-hover:scale-110">
             {project.category === 'Web App' ? '💻' : '🎨'}

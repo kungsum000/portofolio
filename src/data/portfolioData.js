@@ -12,6 +12,7 @@ import tanakaImage from '../assets/tanaka-internship.jpg';
 import tanakaProjectImage from '../assets/tanaka-project.jpg';
 import portfolioProjectImage from '../assets/portfolio-project.png';
 import acestreetImage from '../assets/acestreet-landing.png';
+import beataFruitsImage from '../assets/beata-fruits.png';
 
 export const personalInfo = {
   name: "Umi Kungsum",
@@ -200,14 +201,14 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Sistem Absensi Mahasiswa",
+    title: "Beata Fruits Landing Page",
     description:
-      "Aplikasi web sederhana untuk manajemen absensi mahasiswa dengan fitur QR Code, laporan kehadiran, dan dashboard admin.",
+      "Website landing page modern untuk brand Beata Fruits dengan desain premium, animasi smooth, dan antarmuka responsif.",
     longDescription:
-      "Sistem absensi digital berbasis web yang memudahkan proses pencatatan kehadiran mahasiswa secara otomatis menggunakan QR Code scanner.",
-    tech: ["React.js", "JavaScript", "Firebase", "Tailwind CSS"],
-    image: null,
-    github: "https://github.com/kungsum000/absensi-app",
+      "Landing page interaktif untuk Beata Fruits yang dibangun menggunakan React, TypeScript, Tailwind CSS, dan Framer Motion. Menampilkan produk, testimoni, dan nilai transparansi brand dengan efek cursor glow dan marquee dinamis.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    image: beataFruitsImage,
+    github: "https://github.com/kungsum000/beata-fruits",
     demo: "#",
     category: "Web App",
     featured: false,
